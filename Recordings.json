@@ -1,51 +1,238 @@
 {
   "sections": [
     {
-      "id": "morning",
-      "title": "Morning Prayers",
+      "id": "weekday-shacharit",
+      "title": "Weekday Shacharit",
       "recordings": [
-        {
-          "id": "morning-1",
-          "title": "Shacharit — Weekday",
-          "description": "The full weekday morning service, including Pesukei D'Zimra and the Amidah.",
-          "file": "audio/shacharit-weekday.mp3"
-        },
-        {
-          "id": "morning-2",
-          "title": "Shacharit — Shabbat",
-          "description": "The Shabbat morning service with extended Pesukei D'Zimra and Musaf.",
-          "file": "audio/shacharit-shabbat.mp3"
-        }
+        { "id": "wd-sh-01",  "title": "Modeh Ani",                  "description": "", "file": "Audio/Weekday Recordings/Shacharit/01) Modeh Ani.aac" },
+        { "id": "wd-sh-02",  "title": "Ma Tovu",                    "description": "", "file": "Audio/Weekday Recordings/Shacharit/02) Ma tovu.aac" },
+        { "id": "wd-sh-03",  "title": "Birkot Hashachar",           "description": "", "file": "Audio/Weekday Recordings/Shacharit/03) Birkot hashachar.aac" },
+        { "id": "wd-sh-04",  "title": "Baruch She'amar",            "description": "", "file": "Audio/Weekday Recordings/Shacharit/04) Baruch she'amar.aac" },
+        { "id": "wd-sh-05a", "title": "Ashrei (version a)",         "description": "", "file": "Audio/Weekday Recordings/Shacharit/05a) Ashrei.aac" },
+        { "id": "wd-sh-05b", "title": "Ashrei (version b)",         "description": "", "file": "Audio/Weekday Recordings/Shacharit/05b) Ashrei.aac" },
+        { "id": "wd-sh-05c", "title": "T'hilat Adonai",             "description": "", "file": "Audio/Weekday Recordings/Shacharit/05c) T'hilat adonai.aac" },
+        { "id": "wd-sh-06a", "title": "Halleluyah (version a)",     "description": "", "file": "Audio/Weekday Recordings/Shacharit/06a) Halleluyah.aac" },
+        { "id": "wd-sh-06b", "title": "Halleluyah (version b)",     "description": "", "file": "Audio/Weekday Recordings/Shacharit/06b) Halleluyah.aac" },
+        { "id": "wd-sh-07",  "title": "Yishtabach",                 "description": "", "file": "Audio/Weekday Recordings/Shacharit/07) Yishtabach.aac" },
+        { "id": "wd-sh-08a", "title": "Half Kaddish (version a)",   "description": "", "file": "Audio/Weekday Recordings/Shacharit/08a) Half kaddish.aac" },
+        { "id": "wd-sh-08b", "title": "Half Kaddish (version b)",   "description": "", "file": "Audio/Weekday Recordings/Shacharit/08b) Half kaddish.aac" },
+        { "id": "wd-sh-09",  "title": "Barechu",                    "description": "", "file": "Audio/Weekday Recordings/Shacharit/09) Barechu.aac" },
+        { "id": "wd-sh-10",  "title": "Shema",                      "description": "", "file": "Audio/Weekday Recordings/Shacharit/10) Shema.aac" },
+        { "id": "wd-sh-11",  "title": "Mi Chamocha",                "description": "", "file": "Audio/Weekday Recordings/Shacharit/11) Mi chamocha.aac" },
+        { "id": "wd-sh-12",  "title": "Tzur Yisrael",               "description": "", "file": "Audio/Weekday Recordings/Shacharit/12) Tzur yisrael.aac" },
+        { "id": "wd-sh-13a", "title": "Adonai S'fatai (version a)", "description": "", "file": "Audio/Weekday Recordings/Shacharit/13a) Adonai s'fatai.aac" },
+        { "id": "wd-sh-13b", "title": "Adonai S'fatai (version b)", "description": "", "file": "Audio/Weekday Recordings/Shacharit/13b) Adonai s'fatai.aac" },
+        { "id": "wd-sh-13c", "title": "Adonai S'fatai (version c)", "description": "", "file": "Audio/Weekday Recordings/Shacharit/13c) Adonai s'fatai.aac" },
+        { "id": "wd-sh-14",  "title": "First 2 Paragraphs",         "description": "", "file": "Audio/Weekday Recordings/Shacharit/14) First 2 paragraphs.aac" },
+        { "id": "wd-sh-15",  "title": "Kedusha",                    "description": "", "file": "Audio/Weekday Recordings/Shacharit/15) Kedusha" },
+        { "id": "wd-sh-16",  "title": "Silent Reading",             "description": "Silent — no audio recording.", "file": "" },
+        { "id": "wd-sh-17",  "title": "Sim Shalom",                 "description": "", "file": "Audio/Weekday Recordings/Shacharit/17) Sim shalom.aac" },
+        { "id": "wd-sh-18a", "title": "Oseh Shalom (version a)",    "description": "", "file": "Audio/Weekday Recordings/Shacharit/18a) Oseh shalom.aac" },
+        { "id": "wd-sh-18b", "title": "Oseh Shalom (version b)",    "description": "", "file": "Audio/Weekday Recordings/Shacharit/18b) Oseh shalom.aac" },
+        { "id": "wd-sh-18c", "title": "Oseh Shalom (version c)",    "description": "", "file": "Audio/Weekday Recordings/Shacharit/18c) Oseh shalom.aac" },
+        { "id": "wd-sh-18d", "title": "Oseh Shalom (version d)",    "description": "", "file": "Audio/Weekday Recordings/Shacharit/18d) Oseh shalom.aac" },
+        { "id": "wd-sh-18e", "title": "Oseh Shalom (version e)",    "description": "", "file": "Audio/Weekday Recordings/Shacharit/18e) Oseh shalom.aac" },
+        { "id": "wd-sh-19",  "title": "Full Kaddish",               "description": "", "file": "Audio/Weekday Recordings/Shacharit/19) Full kaddish.aac" },
+        { "id": "wd-sh-20a", "title": "Aleinu (version a)",         "description": "", "file": "Audio/Weekday Recordings/Shacharit/20a) Aleinu.aac" },
+        { "id": "wd-sh-20b", "title": "Aleinu (version b)",         "description": "", "file": "Audio/Weekday Recordings/Shacharit/20b) Aleinu.aac" },
+        { "id": "wd-sh-20c", "title": "Ein Od",                     "description": "", "file": "Audio/Weekday Recordings/Shacharit/20c) Ein od.aac" },
+        { "id": "wd-sh-21",  "title": "Mourner's Kaddish",          "description": "Silent — no audio recording.", "file": "" }
       ]
     },
     {
-      "id": "afternoon",
-      "title": "Afternoon Prayers",
+      "id": "weekday-maariv",
+      "title": "Weekday Maariv",
       "recordings": [
-        {
-          "id": "afternoon-1",
-          "title": "Mincha — Weekday",
-          "description": "The weekday afternoon service, including Ashrei and the Amidah.",
-          "file": "audio/mincha-weekday.mp3"
-        }
+        { "id": "wd-ma-01a", "title": "Barechu (version a)",        "description": "", "file": "Audio/Weekday Recordings/Maariv/01a) Barechu.aac" },
+        { "id": "wd-ma-01b", "title": "Barechu (version b)",        "description": "", "file": "Audio/Weekday Recordings/Maariv/01b) Barechu.aac" },
+        { "id": "wd-ma-02",  "title": "Umavir Yom",                 "description": "", "file": "Audio/Weekday Recordings/Maariv/02) Umavir yom.aac" },
+        { "id": "wd-ma-03",  "title": "Ki Hem Chayeinu",            "description": "", "file": "Audio/Weekday Recordings/Maariv/03) Ki hem chayeinu.aac" },
+        { "id": "wd-ma-04",  "title": "Shema",                      "description": "", "file": "Audio/Weekday Recordings/Maariv/04) Shema.aac" },
+        { "id": "wd-ma-05a", "title": "Umalchuto",                  "description": "", "file": "Audio/Weekday Recordings/Maariv/05a) Umalchuto.aac" },
+        { "id": "wd-ma-05b", "title": "Alternate Mi Chamocha",      "description": "", "file": "Audio/Weekday Recordings/Maariv/05b) Alternate mi chamocha.aac" },
+        { "id": "wd-ma-06a", "title": "Half Kaddish (version a)",   "description": "", "file": "Audio/Weekday Recordings/Maariv/06a) Half kaddish.aac" },
+        { "id": "wd-ma-06b", "title": "Half Kaddish (version b)",   "description": "", "file": "Audio/Weekday Recordings/Maariv/06b) Half kaddish.aac" },
+        { "id": "wd-ma-07",  "title": "Silent Amidah",              "description": "Silent — no audio recording.", "file": "" },
+        { "id": "wd-ma-08a", "title": "Oseh Shalom (version a)",    "description": "", "file": "Audio/Weekday Recordings/Maariv/08a) Oseh shalom.aac" },
+        { "id": "wd-ma-08b", "title": "Oseh Shalom (version b)",    "description": "", "file": "Audio/Weekday Recordings/Maariv/08b) Oseh shalom.aac" },
+        { "id": "wd-ma-08c", "title": "Oseh Shalom (version c)",    "description": "", "file": "Audio/Weekday Recordings/Maariv/08c) Oseh shalom.aac" },
+        { "id": "wd-ma-08d", "title": "Oseh Shalom (version d)",    "description": "", "file": "Audio/Weekday Recordings/Maariv/08d) Oseh shalom.aac" },
+        { "id": "wd-ma-08e", "title": "Oseh Shalom (version e)",    "description": "", "file": "Audio/Weekday Recordings/Maariv/08e) Oseh shalom.aac" },
+        { "id": "wd-ma-09",  "title": "Full Kaddish",               "description": "", "file": "Audio/Weekday Recordings/Maariv/09) Full kaddish.aac" },
+        { "id": "wd-ma-09a", "title": "Aleinu (version a)",         "description": "", "file": "Audio/Weekday Recordings/Maariv/09a) Aleinu.aac" },
+        { "id": "wd-ma-09b", "title": "Aleinu (version b)",         "description": "", "file": "Audio/Weekday Recordings/Maariv/09b) Aleinu.aac" },
+        { "id": "wd-ma-09c", "title": "Ein Od",                     "description": "", "file": "Audio/Weekday Recordings/Maariv/09c) Ein od.aac" }
       ]
     },
     {
-      "id": "evening",
-      "title": "Evening Prayers",
+      "id": "friday-kabshab",
+      "title": "Friday Night — Kabbalat Shabbat",
       "recordings": [
-        {
-          "id": "evening-1",
-          "title": "Maariv — Weekday",
-          "description": "The weekday evening service.",
-          "file": "audio/maariv-weekday.mp3"
-        },
-        {
-          "id": "evening-2",
-          "title": "Maariv — Shabbat",
-          "description": "The Shabbat evening service, including Kabbalat Shabbat.",
-          "file": "audio/maariv-shabbat.mp3"
-        }
+        { "id": "fn-ks-01",  "title": "Y'did Nefesh",               "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/01) Y'did nefesh.aac" },
+        { "id": "fn-ks-02a", "title": "L'chu Neran'na (version a)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/02a) L'chu neran'na.aac" },
+        { "id": "fn-ks-02b", "title": "L'chu Neran'na (version b)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/02b) L'chu neran'na.aac" },
+        { "id": "fn-ks-03",  "title": "Arbaim Shana",               "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/03) Arbaim shana.aac" },
+        { "id": "fn-ks-04",  "title": "Shiru Ladonai",              "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/04) Shiru ladonai.aac" },
+        { "id": "fn-ks-05",  "title": "Psalm 97",                   "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/05) Psalm 97.aac" },
+        { "id": "fn-ks-06",  "title": "Mizmor Shiru Ladonai",       "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/06) Mizmor shiru ladonai.aac" },
+        { "id": "fn-ks-07",  "title": "Psalm 99",                   "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/07) Psalm 99.aac" },
+        { "id": "fn-ks-08",  "title": "Mizmor L'david",             "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/08) Mizmor l'david.aac" },
+        { "id": "fn-ks-09",  "title": "Ana B'coach",                "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/09) Ana b'coach.aac" },
+        { "id": "fn-ks-11a", "title": "Mizmor Shir (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/11a) Mizmor shir.aac" },
+        { "id": "fn-ks-11b", "title": "Mizmor Shir (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/11b) Mizmor shir.aac" },
+        { "id": "fn-ks-12",  "title": "Tzadik Katamar",             "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/12) Tzadik katamar.aac" },
+        { "id": "fn-ks-13",  "title": "Psalm 93",                   "description": "", "file": "Audio/Shabbat Recordings/Friday Night/1. Kab Shab/13) Psalm 93.aac" }
+      ]
+    },
+    {
+      "id": "friday-lecha-dodi",
+      "title": "Friday Night — Lecha Dodi",
+      "recordings": [
+        { "id": "fn-ld-01", "title": "Lecha Dodi (version 1)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/01).aac" },
+        { "id": "fn-ld-02", "title": "Lecha Dodi (version 2)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/02).aac" },
+        { "id": "fn-ld-03", "title": "Lecha Dodi (version 3)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/03).aac" },
+        { "id": "fn-ld-04", "title": "Lecha Dodi (version 4)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/04).aac" },
+        { "id": "fn-ld-05", "title": "Lecha Dodi (version 5)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/05).aac" },
+        { "id": "fn-ld-06", "title": "Lecha Dodi (version 6)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/06).aac" },
+        { "id": "fn-ld-07", "title": "Lecha Dodi (version 7)", "description": "", "file": "Audio/Shabbat Recordings/Friday Night/3. Lecha Dodi/07).aac" }
+      ]
+    },
+    {
+      "id": "friday-maariv",
+      "title": "Friday Night — Shabbat Maariv",
+      "recordings": [
+        { "id": "fn-ma-01a", "title": "Barechu (version a)",        "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/01a) Barechu.aac" },
+        { "id": "fn-ma-01b", "title": "Barechu (version b)",        "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/01b) Barechu.aac" },
+        { "id": "fn-ma-02",  "title": "Umavir Yom",                 "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/02) Umavir yom.aac" },
+        { "id": "fn-ma-03",  "title": "Ki Hem Chayeinu",            "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/03) Ki hem chayeinu.aac" },
+        { "id": "fn-ma-04",  "title": "Shema",                      "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/04) Shema.aac" },
+        { "id": "fn-ma-05a", "title": "Umalchuto",                  "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/05a) Umalchuto.aac" },
+        { "id": "fn-ma-05b", "title": "Alternate Mi Chamocha",      "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/05b) Alternate mi chamocha.aac" },
+        { "id": "fn-ma-06",  "title": "Ufros Aleinu",               "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/06) Ufros aleinu.aac" },
+        { "id": "fn-ma-07a", "title": "V'shamru (version a)",       "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/07a) V'shamru.aac" },
+        { "id": "fn-ma-07b", "title": "V'shamru (version b)",       "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/07b) V'shamru.aac" },
+        { "id": "fn-ma-08a", "title": "Half Kaddish (version a)",   "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/08a) Half kaddish.aac" },
+        { "id": "fn-ma-08b", "title": "Half Kaddish (version b)",   "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/08b) Half kaddish.aac" },
+        { "id": "fn-ma-09",  "title": "Silent Amidah",              "description": "Silent — no audio recording.", "file": "" },
+        { "id": "fn-ma-10",  "title": "Veyachulu",                  "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/10) Veyachulu.aac" },
+        { "id": "fn-ma-11",  "title": "Magen Avot",                 "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/11) Magen avot.aac" },
+        { "id": "fn-ma-12",  "title": "Full Kaddish",               "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/12) Full kaddish.aac" },
+        { "id": "fn-ma-13",  "title": "Kiddush",                    "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/13) Kiddush.aac" },
+        { "id": "fn-ma-14a", "title": "Aleinu (version a)",         "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/14a) Aleinu.aac" },
+        { "id": "fn-ma-14b", "title": "Aleinu (version b)",         "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/14b) Aleinu.aac" },
+        { "id": "fn-ma-14c", "title": "Ein Od",                     "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/14c) Ein od.aac" },
+        { "id": "fn-ma-15",  "title": "Yigdal",                     "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/15) Yigdal.aac" },
+        { "id": "fn-ma-16",  "title": "Shalom Aleichem",            "description": "", "file": "Audio/Shabbat Recordings/Friday Night/2. Shabbat maariv/16) Shalom aleichem.aac" }
+      ]
+    },
+    {
+      "id": "shabbat-shacharit",
+      "title": "Shabbat Morning — Shacharit",
+      "recordings": [
+        { "id": "sb-sh-01",  "title": "Modeh Ani",                  "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/01) Modeh Ani.aac" },
+        { "id": "sb-sh-02",  "title": "Ma Tovu",                    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/02) Ma tovu.aac" },
+        { "id": "sb-sh-03",  "title": "Birkot Hashachar",           "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/03) Birkot hashachar.aac" },
+        { "id": "sb-sh-04",  "title": "Baruch She'amar",            "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/04) Baruch she'amar.aac" },
+        { "id": "sb-sh-05a", "title": "Mizmor Shir (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/05a) Mizmor shir.aac" },
+        { "id": "sb-sh-05b", "title": "Mizmor Shir (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/05b) Mizmor shir.aac" },
+        { "id": "sb-sh-06",  "title": "Tzadik Katamar",             "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/06) Tzadik katamar.aac" },
+        { "id": "sb-sh-07a", "title": "Ashrei (version a)",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/07a) Ashrei.aac" },
+        { "id": "sb-sh-07b", "title": "Ashrei (version b)",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/07b) Ashrei.aac" },
+        { "id": "sb-sh-07c", "title": "T'hilat Adonai",             "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/07c) T'hilat adonai.aac" },
+        { "id": "sb-sh-08a", "title": "Halleluyah (version a)",     "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/08a) Halleluyah.aac" },
+        { "id": "sb-sh-08b", "title": "Halleluyah (version b)",     "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/08b) Halleluyah.aac" },
+        { "id": "sb-sh-09",  "title": "Nishmat Kol Chai",           "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/09) Nishmat kol chai.aac" },
+        { "id": "sb-sh-10",  "title": "Shochen Ad",                 "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/10) Shochen ad.aac" },
+        { "id": "sb-sh-11",  "title": "Yishtabach",                 "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/11) Yishtabach.aac" },
+        { "id": "sb-sh-12a", "title": "Half Kaddish (version a)",   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/12a) Half kaddish.aac" },
+        { "id": "sb-sh-12b", "title": "Half Kaddish (version b)",   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/12b) Half kaddish.aac" },
+        { "id": "sb-sh-13",  "title": "Barechu",                    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/13) Barechu.aac" },
+        { "id": "sb-sh-14",  "title": "El Adon",                    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/14) El adon.aac" },
+        { "id": "sb-sh-15",  "title": "Shema",                      "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/15) Shema.aac" },
+        { "id": "sb-sh-16",  "title": "Mi Chamocha",                "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/16) Mi chamocha.aac" },
+        { "id": "sb-sh-17",  "title": "Tzur Yisrael",               "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/17) Tzur yisrael.aac" },
+        { "id": "sb-sh-18",  "title": "The Amidah",                 "description": "Silent — no audio recording.", "file": "" },
+        { "id": "sb-sh-19a", "title": "Adonai S'fatai (version a)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/19a) Adonai s'fatai.aac" },
+        { "id": "sb-sh-19b", "title": "Adonai S'fatai (version b)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/19b) Adonai s'fatai.aac" },
+        { "id": "sb-sh-19c", "title": "Adonai S'fatai (version c)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/19c) Adonai s'fatai.aac" },
+        { "id": "sb-sh-20",  "title": "First 2 Paragraphs",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/20) First 2 paragraphs.aac" },
+        { "id": "sb-sh-21",  "title": "Alternate N'kadeish",        "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/21) Alternate n'kadeish.aac" },
+        { "id": "sb-sh-22",  "title": "Kedusha",                    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/22) Kedusha.aac" },
+        { "id": "sb-sh-23",  "title": "Silent Reading",             "description": "Silent — no audio recording.", "file": "" },
+        { "id": "sb-sh-24",  "title": "Sim Shalom",                 "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/24) Sim shalom.aac" },
+        { "id": "sb-sh-25a", "title": "Oseh Shalom (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/25a) Oseh shalom.aac" },
+        { "id": "sb-sh-25b", "title": "Oseh Shalom (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/25b) Oseh shalom.aac" },
+        { "id": "sb-sh-25c", "title": "Oseh Shalom (version c)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/25c) Oseh shalom.aac" },
+        { "id": "sb-sh-25d", "title": "Oseh Shalom (version d)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/25d) Oseh shalom.aac" },
+        { "id": "sb-sh-25e", "title": "Oseh Shalom (version e)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/25e) Oseh shalom.aac" },
+        { "id": "sb-sh-26",  "title": "Full Kaddish",               "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/1. Shabbat Shacharit/26) Full kaddish.aac" }
+      ]
+    },
+    {
+      "id": "shabbat-torah",
+      "title": "Shabbat Morning — Torah Service",
+      "recordings": [
+        { "id": "sb-ts-01", "title": "Ein Kamocha",              "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/01) Ein kamocha.aac" },
+        { "id": "sb-ts-02", "title": "Vayhi Binso'a Ha'aron",   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/02) Vayhi binso'a ha'aron.aac" },
+        { "id": "sb-ts-03", "title": "Shema",                    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/03) Shema.aac" },
+        { "id": "sb-ts-04", "title": "L'cha Adonai",             "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/04) L'cha adonai.aac" },
+        { "id": "sb-ts-05", "title": "Half Kaddish",             "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/05) Half kaddish.aac" },
+        { "id": "sb-ts-06", "title": "Ashrei",                   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/06) Ashrei.aac" },
+        { "id": "sb-ts-07", "title": "Y'hall'u",                 "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/07) Y'hall'u.aac" },
+        { "id": "sb-ts-08", "title": "Mizmor L'david",           "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/08) Mizmor l'david.aac" },
+        { "id": "sb-ts-09", "title": "Etz Chayim Hi",            "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/2. Torah Service/09) Etz chayim hi.aac" }
+      ]
+    },
+    {
+      "id": "shabbat-musaf",
+      "title": "Shabbat Morning — Musaf",
+      "recordings": [
+        { "id": "sb-mu-01a", "title": "Half Kaddish (version a)",   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/01a) Half kaddish.aac" },
+        { "id": "sb-mu-01b", "title": "Half Kaddish (version b)",   "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/01b) Half kaddish.aac" },
+        { "id": "sb-mu-02a", "title": "Adonai S'fatai (version a)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/02a) Adonai s'fatai.aac" },
+        { "id": "sb-mu-02b", "title": "Adonai S'fatai (version b)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/02b) Adonai s'fatai.aac" },
+        { "id": "sb-mu-02c", "title": "Adonai S'fatai (version c)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/02c) Adonai s'fatai.aac" },
+        { "id": "sb-mu-03",  "title": "First 2 Paragraphs",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/03) First 2 paragraphs.aac" },
+        { "id": "sb-mu-04",  "title": "Na'aritz'cha",               "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/04) Na'aritz'cha.aac" },
+        { "id": "sb-mu-05a", "title": "K'vodo Malei Olam (version a)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/05a) K'vodo malei olam.aac" },
+        { "id": "sb-mu-05b", "title": "K'vodo Malei Olam (version b)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/05b) K'vodo malei olam.aac" },
+        { "id": "sb-mu-06a", "title": "Mim'komo (version a)",       "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/06a) Mim'komo.aac" },
+        { "id": "sb-mu-06b", "title": "Mim'komo (version b)",       "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/06b) Mim'komo.aac" },
+        { "id": "sb-mu-07a", "title": "Hu Eloheinu (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/07a) Hu eloheinu.aac" },
+        { "id": "sb-mu-07b", "title": "Hu Eloheinu (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/07b) Hu eloheinu.aac" },
+        { "id": "sb-mu-08a", "title": "L'dor Vador (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/08a) L'dor vador.aac" },
+        { "id": "sb-mu-08b", "title": "L'dor Vador (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/08b) L'dor vador.aac" },
+        { "id": "sb-mu-09",  "title": "Silent Reading",             "description": "Silent — no audio recording.", "file": "" },
+        { "id": "sb-mu-10",  "title": "Sim Shalom",                 "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/10) Sim shalom.aac" },
+        { "id": "sb-mu-11a", "title": "Oseh Shalom (version a)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/11a) Oseh shalom.aac" },
+        { "id": "sb-mu-11b", "title": "Oseh Shalom (version b)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/11b) Oseh shalom.aac" },
+        { "id": "sb-mu-11c", "title": "Oseh Shalom (version c)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/11c) Oseh shalom.aac" },
+        { "id": "sb-mu-11d", "title": "Oseh Shalom (version d)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/11d) Oseh shalom.aac" },
+        { "id": "sb-mu-11e", "title": "Oseh Shalom (version e)",    "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/11e) Oseh shalom.aac" },
+        { "id": "sb-mu-12",  "title": "Full Kaddish",               "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/12) Full kaddish.aac" },
+        { "id": "sb-mu-13",  "title": "Ein Keloheinu",              "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/13) Ein keloheinu.aac" },
+        { "id": "sb-mu-14a", "title": "Aleinu (version a)",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/14a) Aleinu.aac" },
+        { "id": "sb-mu-14b", "title": "Aleinu (version b)",         "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/14b) Aleinu.aac" },
+        { "id": "sb-mu-14c", "title": "Ein Od",                     "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/3. Musaf/14c) Ein od.aac" }
+      ]
+    },
+    {
+      "id": "shabbat-adon-olam",
+      "title": "Shabbat Morning — Adon Olam",
+      "recordings": [
+        { "id": "sb-ao-01", "title": "Adon Olam (version 1)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/01).aac" },
+        { "id": "sb-ao-02", "title": "Adon Olam (version 2)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/02).aac" },
+        { "id": "sb-ao-03", "title": "Adon Olam (version 3)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/03).aac" },
+        { "id": "sb-ao-04", "title": "Adon Olam (version 4)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/04).aac" },
+        { "id": "sb-ao-05", "title": "Adon Olam (version 5)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/05).aac" },
+        { "id": "sb-ao-06", "title": "Adon Olam (version 6)", "description": "", "file": "Audio/Shabbat Recordings/Shabbat Morning/4. Adon olam/06).aac" }
+      ]
+    },
+    {
+      "id": "havdallah",
+      "title": "Havdalah",
+      "recordings": [
+        { "id": "hav-01", "title": "Hinei El Yeshuati", "description": "", "file": "Audio/Shabbat Recordings/Havdallah/1) Hinei el yeshuati.aac" }
       ]
     }
   ]
