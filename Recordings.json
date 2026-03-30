@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "id": "morning",
+      "title": "Morning Prayers",
+      "recordings": [
+        {
+          "id": "morning-1",
+          "title": "Shacharit — Weekday",
+          "description": "The full weekday morning service, including Pesukei D'Zimra and the Amidah.",
+          "file": "audio/shacharit-weekday.mp3"
+        },
+        {
+          "id": "morning-2",
+          "title": "Shacharit — Shabbat",
+          "description": "The Shabbat morning service with extended Pesukei D'Zimra and Musaf.",
+          "file": "audio/shacharit-shabbat.mp3"
+        }
+      ]
+    },
+    {
+      "id": "afternoon",
+      "title": "Afternoon Prayers",
+      "recordings": [
+        {
+          "id": "afternoon-1",
+          "title": "Mincha — Weekday",
+          "description": "The weekday afternoon service, including Ashrei and the Amidah.",
+          "file": "audio/mincha-weekday.mp3"
+        }
+      ]
+    },
+    {
+      "id": "evening",
+      "title": "Evening Prayers",
+      "recordings": [
+        {
+          "id": "evening-1",
+          "title": "Maariv — Weekday",
+          "description": "The weekday evening service.",
+          "file": "audio/maariv-weekday.mp3"
+        },
+        {
+          "id": "evening-2",
+          "title": "Maariv — Shabbat",
+          "description": "The Shabbat evening service, including Kabbalat Shabbat.",
+          "file": "audio/maariv-shabbat.mp3"
+        }
+      ]
+    }
+  ]
+}
