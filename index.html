@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer Recordings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:       #fdf6ec;
+      --parchment:   #f5e9d0;
+      --parchment-2: #ecdcc0;
+      --amber:       #c07a2a;
+      --amber-light: #e8a84a;
+      --amber-dark:  #8a5318;
+      --brown:       #5c3d1e;
+      --brown-light: #8a6240;
+      --text:        #3b2710;
+      --text-soft:   #7a5c3a;
+      --shadow:      rgba(90,50,10,0.13);
+      --radius:      10px;
+      --transition:  0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      background-color: var(--cream);
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(224,178,90,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 90%, rgba(192,122,42,0.12) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245,233,208,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--parchment-2);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      min-height: 56px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 18px var(--shadow);
+    }
+
+    .nav-brand {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--amber-dark);
+      letter-spacing: 0.03em;
+      padding: 0.7rem 1.2rem 0.7rem 0;
+      margin-right: 0.5rem;
+      border-right: 1px solid var(--parchment-2);
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      text-decoration: none;
+      padding: 0.55rem 1rem;
+      border-radius: 4px;
+      transition: color var(--transition), background var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--amber-dark);
+      background: rgba(192,122,42,0.10);
+    }
+
+    /* ── HEADER ── */
+    header {
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+      position: relative;
+    }
+
+    .ornament {
+      display: block;
+      font-size: 1.6rem;
+      color: var(--amber);
+      margin-bottom: 0.8rem;
+      opacity: 0.75;
+      letter-spacing: 0.4em;
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 500;
+      color: var(--brown);
+      line-height: 1.2;
+    }
+
+    header p.subtitle {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      font-style: italic;
+      font-family: 'EB Garamond', serif;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--amber), transparent);
+      margin: 1.8rem auto 0;
+      border: none;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 2.5rem;
+      background: rgba(255,251,244,0.7);
+      border: 1px solid var(--parchment-2);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 2px 16px var(--shadow);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.5rem;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--parchment) 0%, rgba(245,233,208,0.5) 100%);
+      border-bottom: 1px solid var(--parchment-2);
+      user-select: none;
+      transition: background var(--transition);
+      gap: 1rem;
+    }
+
+    .section-header:hover {
+      background: linear-gradient(135deg, var(--parchment-2) 0%, var(--parchment) 100%);
+    }
+
+    .section-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--brown);
+      letter-spacing: 0.01em;
+    }
+
+    .toggle-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber-dark);
+      background: none;
+      border: 1px solid var(--parchment-2);
+      border-radius: 20px;
+      padding: 0.3rem 0.85rem;
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition);
+      white-space: nowrap;
+    }
+
+    .toggle-btn:hover {
+      background: rgba(192,122,42,0.12);
+    }
+
+    .toggle-btn .arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-style: normal;
+    }
+
+    .section.collapsed .toggle-btn .arrow { transform: rotate(-90deg); }
+
+    .section-body {
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+      max-height: 2000px;
+      opacity: 1;
+    }
+
+    .section.collapsed .section-body {
+      max-height: 0;
+      opacity: 0;
+    }
+
+    /* ── RECORDING CARD ── */
+    .recording-card {
+      padding: 1.3rem 1.5rem;
+      border-bottom: 1px solid rgba(236,220,192,0.6);
+      transition: background var(--transition);
+    }
+
+    .recording-card:last-child { border-bottom: none; }
+    .recording-card:hover { background: rgba(245,233,208,0.35); }
+
+    .recording-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.08rem;
+      font-weight: 500;
+      color: var(--brown);
+      margin-bottom: 0.35rem;
+    }
+
+    .recording-desc {
+      font-size: 0.88rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+    }
+
+    /* ── AUDIO PLAYER ── */
+    .player-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .audio-row {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+
+    audio {
+      flex: 1;
+      min-width: 180px;
+      height: 36px;
+      accent-color: var(--amber);
+      border-radius: 20px;
+      outline: none;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background: var(--parchment);
+    }
+
+    .speed-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      white-space: nowrap;
+    }
+
+    .speed-select {
+      background: var(--parchment);
+      border: 1px solid var(--parchment-2);
+      border-radius: 6px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.78rem;
+      color: var(--brown);
+      cursor: pointer;
+      transition: border-color var(--transition);
+      font-family: 'Lato', sans-serif;
+    }
+
+    .speed-select:hover, .speed-select:focus {
+      border-color: var(--amber);
+      outline: none;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--amber-dark);
+      background: var(--parchment);
+      border: 1px solid var(--parchment-2);
+      border-radius: 6px;
+      padding: 0.3rem 0.75rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+      white-space: nowrap;
+    }
+
+    .download-btn:hover {
+      background: var(--amber);
+      border-color: var(--amber);
+      color: #fff;
+    }
+
+    .download-btn svg { flex-shrink: 0; }
+
+    /* ── ERROR / LOADING ── */
+    .status-msg {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      color: var(--text-soft);
+      font-size: 1.05rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      opacity: 0.7;
+      border-top: 1px solid var(--parchment-2);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 560px) {
+      nav { padding: 0 1rem; }
+      .nav-brand { font-size: 1rem; padding-right: 0.8rem; margin-right: 0.3rem; }
+      .nav-links a { padding: 0.5rem 0.6rem; font-size: 0.75rem; }
+      header { padding: 2.5rem 1rem 2rem; }
+      .recording-card { padding: 1rem; }
+      audio { min-width: 140px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <span class="nav-brand">🕊 Prayers</span>
+  <ul class="nav-links" id="nav-links"></ul>
+</nav>
+
+<header>
+  <span class="ornament">✦ ✦ ✦</span>
+  <h1>Prayer Recordings</h1>
+  <p class="subtitle">Listen, reflect, and return</p>
+  <hr class="divider" />
+</header>
+
+<main id="content">
+  <p class="status-msg">Loading recordings…</p>
+</main>
+
+<footer>
+  <p>Recordings are for personal use. May these prayers bring peace.</p>
+</footer>
+
+<script>
+  const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+
+  function downloadIcon() {
+    return `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>`;
+  }
+
+  function buildCard(rec) {
+    const card = document.createElement('div');
+    card.className = 'recording-card';
+    card.id = rec.id;
+
+    const title = document.createElement('div');
+    title.className = 'recording-title';
+    title.textContent = rec.title;
+
+    const desc = document.createElement('div');
+    desc.className = 'recording-desc';
+    desc.textContent = rec.description;
+
+    const playerWrap = document.createElement('div');
+    playerWrap.className = 'player-wrap';
+
+    const audioRow = document.createElement('div');
+    audioRow.className = 'audio-row';
+
+    const audio = document.createElement('audio');
+    audio.controls = true;
+    audio.preload = 'none';
+    audio.src = rec.file;
+
+    // Speed control
+    const speedWrap = document.createElement('div');
+    speedWrap.className = 'speed-wrap';
+
+    const speedLabel = document.createElement('label');
+    speedLabel.textContent = 'Speed:';
+
+    const speedSelect = document.createElement('select');
+    speedSelect.className = 'speed-select';
+    speedSelect.setAttribute('aria-label', 'Playback speed');
+    SPEEDS.forEach(s => {
+      const opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s === 1 ? '1× (normal)' : `${s}×`;
+      if (s === 1) opt.selected = true;
+      speedSelect.appendChild(opt);
+    });
+    speedSelect.addEventListener('change', () => {
+      audio.playbackRate = parseFloat(speedSelect.value);
+    });
+
+    speedWrap.appendChild(speedLabel);
+    speedWrap.appendChild(speedSelect);
+
+    // Download button
+    const dlBtn = document.createElement('a');
+    dlBtn.className = 'download-btn';
+    dlBtn.href = rec.file;
+    dlBtn.download = '';
+    dlBtn.setAttribute('aria-label', `Download ${rec.title}`);
+    dlBtn.innerHTML = `${downloadIcon()} Download`;
+
+    audioRow.appendChild(audio);
+    audioRow.appendChild(speedWrap);
+    audioRow.appendChild(dlBtn);
+    playerWrap.appendChild(audioRow);
+
+    card.appendChild(title);
+    card.appendChild(desc);
+    card.appendChild(playerWrap);
+    return card;
+  }
+
+  function buildSection(section) {
+    const wrap = document.createElement('section');
+    wrap.className = 'section';
+    wrap.id = `section-${section.id}`;
+
+    const header = document.createElement('div');
+    header.className = 'section-header';
+    header.setAttribute('role', 'button');
+    header.setAttribute('aria-expanded', 'true');
+    header.setAttribute('tabindex', '0');
+
+    const titleEl = document.createElement('span');
+    titleEl.className = 'section-title';
+    titleEl.textContent = section.title;
+
+    const btn = document.createElement('button');
+    btn.className = 'toggle-btn';
+    btn.innerHTML = `<em class="arrow">▾</em> Hide`;
+    btn.setAttribute('aria-controls', `body-${section.id}`);
+
+    header.appendChild(titleEl);
+    header.appendChild(btn);
+
+    const body = document.createElement('div');
+    body.className = 'section-body';
+    body.id = `body-${section.id}`;
+
+    section.recordings.forEach(rec => body.appendChild(buildCard(rec)));
+
+    function toggle() {
+      const collapsed = wrap.classList.toggle('collapsed');
+      btn.innerHTML = `<em class="arrow">▾</em> ${collapsed ? 'Show' : 'Hide'}`;
+      header.setAttribute('aria-expanded', String(!collapsed));
+    }
+
+    header.addEventListener('click', toggle);
+    header.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+
+    wrap.appendChild(header);
+    wrap.appendChild(body);
+    return wrap;
+  }
+
+  async function init() {
+    const content = document.getElementById('content');
+    const navLinks = document.getElementById('nav-links');
+
+    try {
+      const res = await fetch('recordings.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      content.innerHTML = '';
+
+      data.sections.forEach(section => {
+        // Nav link
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `#section-${section.id}`;
+        a.textContent = section.title;
+        li.appendChild(a);
+        navLinks.appendChild(li);
+
+        // Section
+        content.appendChild(buildSection(section));
+      });
+
+    } catch (err) {
+      content.innerHTML = `<p class="status-msg">Could not load recordings. Please check that <code>recordings.json</code> is in the same folder as <code>index.html</code>.<br><br><small>${err.message}</small></p>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
